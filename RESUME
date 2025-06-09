@@ -1,0 +1,69 @@
+<html>
+<head>
+  <title>Resume - LeelaRadhika</title>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>LeelaRadhika</h1>
+    <h2>Full Stack Web Developer</h2>
+    <p>Email:leelaradhikabakuri@gmail.com | Phone:8121298562</p>
+    <p>
+      <a href="https://linkedin.com/in/johndoe">LinkedIn</a> |
+      <a href="https://github.com/johndoe">GitHub</a>
+    </p>
+    <hr>
+  </header>
+
+        <p><b>ABOUT ME:</b>Eager to apply theoretical knowledge to real-world challenges. Strong problem-solving skills, quick learner, and a team player looking to kickstart a career in a dynamic and growth-oriented organization.</p>
+        <h3>QUALIFICATIONS:</h3>
+        <table border="1px">
+            <tr>
+                <th>S.NO</th>
+                <th>QUALIFICATION</th>
+                <th>UNIVERSITY OR COLLEGE NAME</th>
+                <th>PERCENTAGE</th>
+                <th>YEAR OF PASSING</th>
+            </tr>
+            <tr>
+                <th>1</th>
+                <th>BTech-CSE</th>
+                <th>SVIET College</th>
+                <th>83%</th>
+                <th>2026</th>
+            </tr>
+            <tr>
+                <th>2</th>
+                <th>Board of Intermedite</th>
+                <th>Star junior College</th>
+                <th>95%</th>
+                <th>2022</th>
+            </tr>
+            <tr>
+                <th>3</th>
+                <th>SSC</th>
+                <th>Dr.k.k.R's Gowtham School</th>
+                <th>98%</th>
+                <th>2020</th>
+            </tr>
+        </table>
+        <h3><b>INTERSHIP EXPERIENCS:</b></h3>
+        <p>Andriod Developer Virtual Intership<br>
+            october-December 2024<br>
+           A virtual internship in Android development provides hands-on experience in building, testing, and deploying Android applications remotely, typically through online platforms like Zoho or virtual learning platforms.
+        </p>
+        <h3>SKILLS:</h3>
+        <p><pre>HTML,CSS
+problem-solving
+python
+Java
+        </pre></p>
+        <h3>PROJECTS:</h3>
+        <p>CSP-Community Service Project<br>
+        I did CSP project on <u>Nutrition</u>.It's about making awareness in people how to take sufficient nutrition of food and which food can be provide for the children.  </p>
+        <h3>CERTIFICATES:</h3>
+        <p>Achieved a certificate on <u>Acadimic Topper</u> in 2024 at SVIET.<br> 
+        </p>
+   </body>
+</html>
