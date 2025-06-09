@@ -1,0 +1,129 @@
+<html>
+    <head>
+        <title>
+           Resturant MENU
+        </title>
+        <style>
+            div{
+                text-align: center;
+            }
+            body{
+                background-color: floralwhite;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <img src="resturant.jpg" width="100px">
+        </div>
+        <h1 align="center" style="color: rgb(207, 18, 84);font-style: oblique;"><u>ONE8 COMMUNE</u></h1>
+        <h1 align="center" style="color: rgb(207, 18, 84);"><u>MENU</u></h1>
+        <table cellspacing="25px">
+            <caption style="color: rgb(52, 7, 95);text-align: center;font-weight: bold;"><u>STARTERS</u></caption>
+               <tr>
+                <th>VEG-STARTERS</th>
+                <th>PRICE</th>
+                <th>IMAGE</th>
+                <th>NV-STARTERS</th>
+                <th>PRICE</th>
+                <th>IMAGE</th>
+               </tr>
+               <tr>
+                <td>Paneer tikka</td>
+                <td>180/-</td>
+                <td><img src="paneer.jpg" width="50px"></td>
+                <td>Chicken65</td>
+                <td>220</td>
+                <td><img src="chicken65.jpg" width="50px"></td>
+               </tr>
+               <tr>
+                <td>Manchurian</td>
+                <td>160/-</td>
+                <td><img src="vegmanch.jpg" width="50px"></td>
+                <td>Prawns fry</td>
+                <td>280</td>
+                <td><img src="p.jpg" width="50px"></td>
+               </tr>
+        </table>
+        <table cellspacing="25px">
+                <caption style="color: rgb(52, 7, 95);text-align: center;font-weight: bold;"><u>BIRYANI</u></caption>
+                <tr>
+                    <th>VEG</th>
+                    <th>PRICE</th>
+                    <th>IMAGE</th>
+                    <th>NON-VEG</th>
+                    <th>PRICE</th>
+                    <th>IMAGE</th>
+                </tr>
+                <tr>
+                    <td>Gobi biryani</td>
+                    <td>270</td>
+                    <td><img src="vbir.jpg" width="50px"></td>
+                    <td>Chicken biryani</td>
+                    <td>290</td>
+                    <td><img src="cbir.jpg" width="50px"></td>
+                </tr>
+                <tr>
+                    <td>Paneer biryani</td>
+                    <td>320</td>
+                    <td><img src="pbir.jpg" width="50px"></td>
+                    <td>Mutton biryani</td>
+                    <td>330</td>
+                    <td><img src="mbir.jpg" width="50px"></td>
+                </tr>
+            </table>
+            <table cellspacing="25px">
+                <caption style="color: rgb(52,7, 95);text-align: center;font-weight: bold;"><u>COOL DRINKS</u></caption>
+                <tr>
+                    <th>DRINK</th>
+                    <th>PRICE</th>
+                    <th>IMAGE</th>
+                </tr>
+                <tr>
+                    <td>Coke</td>
+                    <td>55</td>
+                    <td><img src="c.jpg" width="50px"></td>
+                </tr>
+                <tr>
+                    <td>Thumbs up</td>
+                    <td>39</td>
+                    <td><img src="t.jpg" width="50px"></td>
+                </tr>
+                <tr>
+                    <td>Soft drinks</td>
+                    <td>70</td>
+                    <td><img src="sd.jpg" width="50px"></td>
+                </tr>
+            </table>
+            <table cellspacing="25px">
+                <caption style="color: rgb(52, 7, 95);text-align: center;font-weight: bold;"><u>DESSERTD</u></caption>
+                <tr>
+                    <th>ITEMS</th>
+                    <th>PRICE</th>
+                    <th>IMAGE</th>
+                </tr>
+                <tr>
+                    <td>Rashogolla</td>
+                    <td>99</td>
+                    <td><img src="r.jpg" width="50px"></td>
+                </tr>
+                <tr>
+                    <td>Buttersctoch cake</td>
+                    <td>149</td>
+                    <td><img src="bs cake.jpg" width="50px"></td>
+                </tr>
+                </table>
+                 <section>
+                    <hr>
+    <h2>Contact Us</h2>
+    <p>Address: HItech City, Hyderabad, Telangana, India</p>
+    <p>Phone: +91 2131415161</p>
+    <p>Email: contact@ONE8 COMMUNE.com</p>
+    <p>Website: <a href="http://www.ONE8COMMUNE.com">www.ONE8.COMMUNE</a></p>
+    </hr>
+  </section>
+            <hr>
+            <h3 align="center"><u>THANK YOU VISITING</u></h3>
+            <h3 align="center">Timings-12:00PM to 3:00PM</h3>
+    </body>
+</html>
