@@ -1,0 +1,236 @@
+/*1. Add Integer Values of an Array
+import java.util.Scanner;
+public class Main {
+    public static int addArray(int[] arr) {
+        int sum = 0;
+        for (int num : arr) {
+            sum = sum + num;
+        }
+        return sum;
+    }
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter number of elements: ");
+        int n = scanner.nextInt();
+        int[] numbers = new int[n];
+        System.out.println("Enter " + n + " numbers:");
+        for (int i = 0; i < n; i++) {
+            numbers[i] = scanner.nextInt();
+        }
+        int result = addArray(numbers);
+        System.out.println("Sum of array elements: " + result);
+    }
+}
+*/
+
+/*2. Calculate the Average Value of an Array of Integers
+import java.util.Scanner;
+public class AverageCalculator {
+    public static double averageArray(int[] arr) {
+        int sum = 0;
+        for (int num : arr) {
+            sum += num;
+        }
+        return (double) sum / arr.length;
+    }
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter number of elements: ");
+        int n = scanner.nextInt();
+        int[] numbers = new int[n];
+        System.out.println("Enter " + n + " numbers:");
+        for (int i = 0; i < n; i++) {
+            numbers[i] = scanner.nextInt();
+        }
+        double average = averageArray(numbers);
+        System.out.println("Average value: " + average);
+    }
+}
+*/
+
+/*3. Find the Index of an Array Element
+import java.util.Scanner;
+public class FindIndex {
+    public static int findIndex(int[] arr, int target) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == target) {
+                return i; 
+            }
+        }
+        return -1; 
+    }
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter number of elements: ");
+        int n = scanner.nextInt();
+        int[] numbers = new int[n];
+        System.out.println("Enter " + n + " numbers:");
+        for (int i = 0; i < n; i++) {
+            numbers[i] = scanner.nextInt();
+        }
+        System.out.print("Enter the value to find its index: ");
+        int value = scanner.nextInt();  
+        int index = findIndex(numbers, value);
+        if (index != -1) {
+            System.out.println("Element found at index: " + index);
+        } else {
+            System.out.println("Element not found in the array.");
+        }
+    }
+}
+*/
+
+/*4. Test if Array Contains a Specific Value
+public class ArrayContainsExample {
+    public static boolean contains(int[] arr, int target) {
+        for (int n : arr) {
+            if (n == target) {
+                return true;
+            }
+        }
+        return false;
+    }
+    public static void main(String[] args) {
+        int[] numbers = { 3, 5, 7, 2, 6, 10 };
+        int key = 7;
+        System.out.println(key + (contains(numbers, key) ? " found." : " not found."));
+    }
+}
+*/
+
+/*5. Remove a Specific Element from an Array
+import java.util.Arrays;
+public class RemoveElement {
+    public static int[] remove(int[] arr, int value) {
+        int index = -1;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == value) {
+                index = i;
+                break;
+            }
+        }
+        if (index == -1) return arr;
+        int[] result = new int[arr.length - 1];
+        System.arraycopy(arr, 0, result, 0, index);
+        System.arraycopy(arr, index + 1, result, index, arr.length - index - 1);
+        return result;
+    }
+    public static void main(String[] args) {
+        int[] numbers = {10, 20, 30, 20, 40};
+        System.out.println("Before: " + Arrays.toString(numbers));
+        numbers = remove(numbers, 20);
+        System.out.println("After:  " + Arrays.toString(numbers));
+    }
+}
+*/
+
+/*6. Copy an Array to Another Array
+import java.util.Arrays;
+public class CopyUsingArraycopy {
+    public static void main(String[] args) {
+        int[] source = {1, 2, 3, 4, 5};
+        int[] dest = new int[source.length];
+        System.arraycopy(source, 0, dest, 0, source.length);
+        System.out.println("source = " + Arrays.toString(source));
+        System.out.println("dest   = " + Arrays.toString(dest));
+    }
+}
+*/
+
+/*7. Insert an Element at a Specific Position in the Array
+import java.util.Arrays;
+public class InsertElement {
+    public static int[] insert(int[] arr, int value, int pos) {
+        if (pos < 0 || pos > arr.length) {
+            throw new IndexOutOfBoundsException("Invalid position: " + pos);
+        }
+        int[] result = new int[arr.length + 1];
+        System.arraycopy(arr, 0, result, 0, pos);
+        result[pos] = value;
+        System.arraycopy(arr, pos, result, pos + 1, arr.length - pos);
+        return result;
+    }
+    public static void main(String[] args) {
+        int[] nums = {10, 20, 30, 40};
+        System.out.println("Before: " + Arrays.toString(nums));
+        nums = insert(nums, 25, 2);  
+        System.out.println("After:  " + Arrays.toString(nums));
+    }
+}
+*/
+
+/*8. Find the Minimum and Maximum Value of an Array
+ public class MinMaxFinder {
+    public static int[] findMinMax(int[] arr) {
+        if (arr == null || arr.length == 0) {
+            throw new IllegalArgumentException("Array must not be null or empty");
+        }
+        int min = arr[0];
+        int max = arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] < min) min = arr[i];
+            if (arr[i] > max) max = arr[i];
+        }
+        return new int[]{min, max};
+    }
+    public static void main(String[] args) {
+        int[] numbers = { 23, 92, 56, 39, 93, 5 };
+        int[] result = findMinMax(numbers);
+        System.out.println("Min = " + result[0] + ", Max = " + result[1]);
+    }
+}
+
+*/
+
+/*9. Reverse an Array of Integer Values
+import java.util.Arrays;
+public class ArrayReverser {
+    public static void reverseInPlace(int[] arr) {
+        for (int i = 0; i < arr.length / 2; i++) {
+            int temp = arr[i];
+            arr[i] = arr[arr.length - 1 - i];
+            arr[arr.length - 1 - i] = temp;
+        }
+    }
+    public static void main(String[] args) {
+        int[] data = {1, 2, 3, 4, 5};
+        System.out.println("Original: " + Arrays.toString(data));
+        reverseInPlace(data);
+        System.out.println("Reversed: " + Arrays.toString(data));
+    }
+}
+*/
+
+/*10. Find the Duplicate Values of an Array
+import java.util.Scanner;
+public class FindDuplicates {
+    public static void findDuplicates(int[] arr) {
+        boolean hasDuplicates = false;
+        System.out.println("Duplicate elements are:");
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[i] == arr[j]) {
+                    System.out.println(arr[i]);
+                    hasDuplicates = true;
+                    break;
+                }
+            }
+        }
+        if (!hasDuplicates) {
+            System.out.println("No duplicates found.");
+        }
+    }
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter number of elements: ");
+        int n = scanner.nextInt();
+        int[] numbers = new int[n];
+        System.out.println("Enter " + n + " numbers:");
+        for (int i = 0; i < n; i++) {
+            numbers[i] = scanner.nextInt();
+        }
+        findDuplicates(numbers);
+    }
+}
+*/
+
