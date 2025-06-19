@@ -1,26 +1,24 @@
 /*1. Add Integer Values of an Array
-import java.util.Scanner;
-public class Main {
-    public static int addArray(int[] arr) {
-        int sum = 0;
-        for (int num : arr) {
-            sum = sum + num;
-        }
-        return sum;
-    }
-    public static void main(String[] args) {
+  import java.util.Scanner;
+public class ArrayAddition
+{
+    public static void main(String[] args)
+    {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter number of elements: ");
-        int n = scanner.nextInt();
+        int sum = 0;
+         int n = scanner.nextInt();
         int[] numbers = new int[n];
         System.out.println("Enter " + n + " numbers:");
-        for (int i = 0; i < n; i++) {
+        for(int i = 0; i < n; i++)
+        {
             numbers[i] = scanner.nextInt();
+            sum = sum + numbers[i];
         }
-        int result = addArray(numbers);
-        System.out.println("Sum of array elements: " + result);
+        System.out.println("Sum of array elements: " + sum);
     }
 }
+
 */
 
 /*2. Calculate the Average Value of an Array of Integers
