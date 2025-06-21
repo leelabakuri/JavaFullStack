@@ -1,0 +1,91 @@
+/*public class Stringcase {
+  public static void main(String[] args) {
+    String s1 = "tom";
+    String s2 = "JErRy";
+    System.out.println(s1.toUpperCase());
+    System.out.println(s2.toLowerCase());
+  }
+}
+output:
+TOM
+jerry
+*/
+/*public class Stringconcate{
+public static void main(String[] args){
+String s1="tom";
+String s2="jerry";
+String s3=s1+s2;
+System.out.println(s3);
+}
+}
+output:
+tomjerry
+*/
+/*public class Stringlength{
+public static void main(String[] args){
+String s1="tomjerry";
+System.out.println(s1.length());
+}
+}
+output:8
+*/
+
+/*public class Stringindex{
+public static void main(String[] args){
+String s1="tomjerry";
+System.out.println(s1.indexOf("e"));
+}
+}
+output:4
+*/
+
+/*public class Sample{
+public static void main(String[] args){
+String s1="tomjerry";
+System.out.println(s1.substring(2));
+System.out.println(s1.substring(0,4));
+}
+}
+output:mjerry
+            tomj
+*/
+
+/*public class Sample{
+public static void main(String[] args){
+String s1="tom";
+String s2="jerry";
+System.out.println(s1.equals(s2));
+}
+}
+output:
+false
+*/
+/*
+public class Sample{
+public static void main(String[] args){
+String s1="tom";
+String s2="jerry";
+String s3="JERRY";
+String s4="tomandjerry";
+System.out.println(s3.equalsIgnoreCase(s2));
+System.out.println(s4.startsWith("tom"));
+System.out.println(s4.endsWith("tom"));
+System.out.println(s2.compareTo(s3));
+}
+}
+output:
+true
+true
+false
+32
+*/
+
+/*public class Sample{
+public static void main(String[] args){
+String s1="           tom jerry ";
+System.out.println(s1.trim());
+}
+}
+output:
+tom jerry
+*/
