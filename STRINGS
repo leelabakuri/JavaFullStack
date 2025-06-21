@@ -39,7 +39,7 @@ System.out.println(s1.indexOf("e"));
 output:4
 */
 
-/*public class Sample{
+/*public class Stringsubstring{
 public static void main(String[] args){
 String s1="tomjerry";
 System.out.println(s1.substring(2));
@@ -50,7 +50,7 @@ output:mjerry
             tomj
 */
 
-/*public class Sample{
+/*public class Stringequals{
 public static void main(String[] args){
 String s1="tom";
 String s2="jerry";
@@ -61,7 +61,7 @@ output:
 false
 */
 /*
-public class Sample{
+public class Strings{
 public static void main(String[] args){
 String s1="tom";
 String s2="jerry";
@@ -80,7 +80,7 @@ false
 32
 */
 
-/*public class Sample{
+/*public class Stringtrim{
 public static void main(String[] args){
 String s1="           tom jerry ";
 System.out.println(s1.trim());
@@ -89,3 +89,15 @@ System.out.println(s1.trim());
 output:
 tom jerry
 */
+
+/*public class Stringreplace{
+public static void main(String[] args){
+String s1="tomjerry ";
+System.out.println(s1.replace( 'm','l'));
+}
+}
+output:
+toljerry
+*/
+
+
