@@ -427,3 +427,465 @@ public class MissingNumberFinder {
     }
 }
 
+/* binarysearch
+import java.util.Scanner;
+public class BinarySearch {
+    public static int binarySearch(int[] array, int target) {
+        int low = 0;
+        int high = array.length - 1;
+        while (low <= high) {
+            int mid = low + (high - low) / 2;
+            if (array[mid] == target) {
+                return mid; 
+            } else if (array[mid] < target) {
+                low = mid + 1; 
+            } else {
+                high = mid - 1; 
+            }
+        }
+        return -1; 
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number of elements: ");
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        System.out.println("Enter " + n + " sorted integers (ascending):");
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        System.out.print("Enter the number to search for: ");
+        int target = sc.nextInt();
+        int index = binarySearch(arr, target);
+        if (index >= 0) {
+            System.out.println("Element " + target + " found at index: " + index);
+        } else {
+            System.out.println("Element " + target + " not found in the array.");
+        }
+
+        sc.close();
+    }
+}
+*/
+
+/*minmax
+import java.util.Scanner;
+public class MinMax {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number of elements: ");
+        int n = sc.nextInt();
+        if (n <= 0) {
+            System.out.println("Array must have at least one element.");
+            sc.close();
+            return;
+        }
+        int[] arr = new int[n];
+        System.out.println("Enter " + n + " integers");
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        sc.close();
+        int min = arr[0];
+        int max = arr[0];
+        for (int i = 1; i < n; i++) {
+            if (arr[i] < min) min = arr[i];
+            if (arr[i] > max) max = arr[i];
+        }
+        System.out.println("Minimum value = " + min);
+        System.out.println("Maximum value = " + max);
+    }
+}
+*/
+
+/*frequency numbers
+import java.util.Arrays;
+import java.util.Scanner;
+public class Frequency {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number of elements: ");
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        System.out.println("Enter " + n + " integers:");
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        sc.close();
+        if (n == 0) {
+            System.out.println("No elements to process.");
+            return;
+        }
+        Arrays.sort(arr);
+        System.out.println("Element frequencies:");
+        int current = arr[0];
+        int count = 1;
+        for (int i = 1; i < n; i++) {
+            if (arr[i] == current) {
+                count++;
+            } else {
+                System.out.println(current + " -> " + count);
+                current = arr[i];
+                count = 1;
+            }
+        }
+        System.out.println(current + " -> " + count);
+    }
+}
+*/
+
+/* common elements
+import java.util.Scanner;
+public class CommonElements {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter size of first array: ");
+        int n = sc.nextInt();
+        int[] a = new int[n];
+        for (int i = 0; i < n; i++) {
+            a[i] = sc.nextInt();
+        }
+        System.out.print("Enter size of second array: ");
+        int m = sc.nextInt();
+        int[] b = new int[m];
+        for (int j = 0; j < m; j++) {
+            b[j] = sc.nextInt();
+        }
+        sc.close();
+        System.out.println("Common elements:");
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                if (a[i] == b[j]) {
+                    System.out.println(a[i]);
+                    b[j] = Integer.MIN_VALUE; 
+                    break;
+                }
+            }
+        }
+    }
+}
+*/
+
+/*even and odd integer array
+import java.util.Arrays;
+import java.util.Scanner;
+public class EvenOdd{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number of elements: ");
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        System.out.println("Enter the elements:");
+        for(int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        sc.close();
+        int evenCount = 0, oddCount = 0;
+        for(int num : arr) {
+            if(num % 2 == 0) {
+                evenCount++;
+            } else {
+                oddCount++;
+            }
+        }
+        System.out.println("Array: " + Arrays.toString(arr));
+        System.out.println("Even elements count: " + evenCount);
+        System.out.println("Odd elements count: " + oddCount);
+    }
+}
+*/
+
+/*positive and negative numbers count
+import java.util.Scanner;
+public class PosNeg {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number of elements: ");
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        System.out.println("Enter " + n + " integers:");
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        sc.close();
+        int positiveCount = 0;
+        int negativeCount = 0;
+        int zeroCount = 0;
+        for (int v : arr) {
+            if (v > 0) {
+                positiveCount++;
+            } else if (v < 0) {
+                negativeCount++;
+            } else {
+                zeroCount++;
+            }
+        }
+        System.out.println("Positive numbers: " + positiveCount);
+        System.out.println("Negative numbers: " + negativeCount);
+        System.out.println("Zeros: " + zeroCount);
+    }
+}
+*/
+
+/*insert element in the position of the array
+import java.util.Scanner;
+import java.util.Arrays;
+public class Insert{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter array size: ");
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        System.out.println("Enter " + n + " elements:");
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        System.out.print("Enter element to insert: ");
+        int elem = sc.nextInt();
+        System.out.print("Enter position to insert: ");
+        int pos = sc.nextInt();
+        int[] newArr = new int[n + 1];
+        for (int i = 0; i < newArr.length; i++) {
+            if (i < pos) {
+                newArr[i] = arr[i];
+            } else if (i == pos) {
+                newArr[i] = elem;
+            } else {
+                newArr[i] = arr[i - 1];
+            }
+        }
+        System.out.println("before: " + Arrays.toString(arr));
+        System.out.println("after:  " + Arrays.toString(newArr));
+        sc.close();
+    }
+}
+*/
+
+/*delete an element in the array
+import java.util.Scanner;
+import java.util.Arrays;
+public class Delete {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number of elements: ");
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        System.out.println("Enter " + n + " integers:");
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        System.out.print("Enter the value to delete: ");
+        int target = sc.nextInt();
+        sc.close();
+        boolean deleted = false;
+        for (int i = 0; i < arr.length - 1; i++) {
+            if (!deleted && arr[i] == target) {
+                deleted = true;
+            }
+            if (deleted) {
+                arr[i] = arr[i + 1];  
+            }
+        }
+        if (deleted) {
+            System.out.println("Array after deletion: " +
+                Arrays.toString(Arrays.copyOf(arr, arr.length - 1)));
+        } else {
+            System.out.println("Value not found, array unchanged: " +
+                Arrays.toString(arr));
+        }
+    }
+}
+*/
+
+/*check if the array is palindrome
+import java.util.Scanner;
+public class Palindrome {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number of elements: ");
+        int n = sc.nextInt();
+        if (n <= 0) {
+            System.out.println("Array is empty ");
+            sc.close();
+            return;
+        }
+        int[] arr = new int[n];
+        System.out.println("Enter " + n + " integers:");
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        sc.close();
+        boolean isPalindrome = true;
+        int start = 0, end = n - 1;
+        while (start < end) {
+            if (arr[start] != arr[end]) {
+                isPalindrome = false;
+                break;
+            }
+            start++;
+            end--;
+        }
+        if (isPalindrome) {
+            System.out.println("The array is a palindrome.");
+        } else {
+            System.out.println("The array is NOT a palindrome.");
+        }
+    }
+}
+*/
+
+/*multiplication of two matrices
+import java.util.Scanner;
+public class MatrixMultiply {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number of rows in first matrix: ");
+        int r1 = sc.nextInt();
+        System.out.print("Enter number of columns in first matrix: ");
+        int c1 = sc.nextInt();
+        int[][] A = new int[r1][c1];
+        System.out.println("Enter elements of first matrix:");
+        for (int i = 0; i < r1; i++)
+            for (int j = 0; j < c1; j++)
+                A[i][j] = sc.nextInt();
+        System.out.print("Enter number of rows in second matrix: ");
+        int r2 = sc.nextInt();
+        System.out.print("Enter number of columns in second matrix: ");
+        int c2 = sc.nextInt();
+        if (r2 != c1) {
+            System.out.println("Matrices cannot be multiplied (columns of A ≠ rows of B).");
+            sc.close();
+            return;
+        }
+        int[][] B = new int[r2][c2];
+        System.out.println("Enter elements of second matrix:");
+        for (int i = 0; i < r2; i++)
+            for (int j = 0; j < c2; j++)
+                B[i][j] = sc.nextInt();
+        int[][] C = new int[r1][c2];
+        for (int i = 0; i < r1; i++) {
+            for (int j = 0; j < c2; j++) {
+                C[i][j] = 0;
+                for (int k = 0; k < c1; k++) {
+                    C[i][j] += A[i][k] * B[k][j];
+                }
+            }
+        }
+        sc.close();
+        System.out.println("Product matrix:");
+        for (int i = 0; i < r1; i++) {
+            for (int j = 0; j < c2; j++) {
+                System.out.print(C[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+*/
+
+/*sum of all even numbers
+import java.util.Scanner;
+public class SumEven{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number of elements: ");
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        System.out.println("Enter " + n + " integers:");
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        sc.close();
+        int sum = 0;
+        for (int num : arr) {
+            if (num % 2 == 0) {
+                sum += num;
+            }
+        }
+        System.out.println("Sum of even numbers = " + sum);
+    }
+}
+*/
+
+/*all pairs whose sum is equals a given number
+import java.util.Scanner;
+public class PairSum{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Array size: ");
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        System.out.println("Enter " + n + " integers:");
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        System.out.print("Target sum: ");
+        int target = sc.nextInt();
+        sc.close();
+        System.out.println("Pairs with sum " + target + ":");
+        for (int i = 0; i < n; i++) {
+            for (int j = i + 1; j < n; j++) {
+                if (arr[i] + arr[j] == target) {
+                    System.out.println("(" + arr[i] + ", " + arr[j] + ")");
+                }
+            }
+        }
+    }
+}
+*/
+
+/*to count the number of elements greater than the given value in the array
+import java.util.Scanner;
+public class Greater {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number of elements: ");
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        System.out.println("Enter " + n + " integers:");
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        System.out.print("Enter the  value: ");
+        int value = sc.nextInt();
+        sc.close();
+        int count = 0;
+        for (int num : arr) {
+            if (num > value) {
+                count++;
+            }
+        }
+        System.out.println("Number of elements greater than " + value + " = " + count);
+    }
+}
+*/
+
+/*average of all values in the array
+import java.util.Scanner;
+public class Average {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number of elements: ");
+        int n = sc.nextInt();
+        if (n <= 0) {
+            System.out.println("Array can not be empty.");
+            sc.close();
+            return;
+        }
+        int[] arr = new int[n];
+        System.out.println("Enter " + n + " integers:");
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        sc.close();
+        double sum = 0;
+        for (int num : arr) {
+            sum += num;
+        }
+        double average = sum / n;
+        System.out.printf("Average of array values = %.2f%n", average);
+    }
+}
+
+
+
