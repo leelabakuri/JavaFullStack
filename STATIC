@@ -24,6 +24,11 @@ public static void main (String[] args){
     c.div();
 }
 }
+output:
+add
+sub
+mul
+div
 */
 
 /*2.instance variables in static methods
@@ -42,5 +47,119 @@ public static void main (String[] args){
    c.sub();
 }
 }
+output:
+add
+sub
 */
+
+/*3.print static variables in instance methods
+public class Cse
+{
+static int a=10;
+static int b=20;
+void add()
+{
+System.out.println("add");
+}
+void sub()
+{
+System.out.println("sub");
+}
+public static void main(String[] args)
+{
+Cse obj=new Cse();
+obj.add();
+obj.sub();        
+}
+}
+output:
+add
+sub
+*/
+
+/*4.call instance methods in static methods
+class Cse 
+{
+void add() 
+{
+System.out.println("This is instance method");
+}
+public static void  main(String[] args) 
+{
+System.out.println("hii");
+Static obj = new Static();
+obj.add();  
+}
+}
+output:
+hii
+add
+*/
+
+/*5.call static methods in instance methods
+class Cse 
+{
+static void add() 
+{
+System.out.println("This is a static method");
+}
+void sub() 
+{
+System.out.println("Inside instance method");
+}
+public static void main(String[] args) 
+{
+Cse c = new Cse(); 
+add();
+c.sub();
+}
+}
+output:
+This is a static method
+Inside instance method
+*/
+
+/*6.print the static,instance variables in main method
+class Cse
+{
+static int a = 10;
+static int b= 20;
+int c = 30;
+int d= 40;
+public static void main(String[] args) 
+{
+Cse obj = new Cse();
+System.out.println(a);
+System.out.println(b);
+System.out.println(obj.c);
+System.out.println(obj.d);
+}
+}
+output:
+10
+20
+30
+40
+*/
+
+/*7.call static methods and instance methods in main method
+class Cse{
+static void add() {
+System.out.println("This is a static method.");
+}
+void sub() {
+System.out.println("This is an instance method.");
+}
+public static void main(String[] args) {
+add();
+Cse obj = new Cse();
+obj.sub();
+}
+}
+output:
+This is a static method.
+This is an instance method.
+*/
+
+
 
