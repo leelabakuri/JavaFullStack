@@ -1,0 +1,46 @@
+/*1.A class with 2static variables,2 instance variables,2 static methods,2 instance methods and main class
+class Cse{
+static int a=10;
+static int b=20;
+       int c=9;
+       int d=8;
+static void add(){
+System.out.println("add");
+}
+static void sub(){
+System.out.println("sub");
+} 
+void mul(){
+System.out.println("mul");
+}
+void div(){
+System.out.println("div");
+}
+public static void main (String[] args){
+    Cse c=new Cse();
+    add();
+    sub();
+    c.mul();
+    c.div();
+}
+}
+*/
+
+/*2.instance variables in static methods
+class Cse{
+       int a=9;
+       int b=8;
+static void add(){
+System.out.println("add");
+}
+static void sub(){
+System.out.println("sub");
+} 
+public static void main (String[] args){
+    Cse c=new Cse();
+   c.add();
+   c.sub();
+}
+}
+*/
+
